@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play and Learn AI</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .cta {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            const handleJoin = () => {
+                window.location.href = './second.html';
+            };
+
+            return (
+                <div>
+                    <h1>Play and Learn AI</h1>
+                    <div className="content">
+                        <p>Many AI tools like ChatGPT, Bing Copilot, Anthropic Claude, Eleven Labs, and Suno are available at little to no cost. They offer powerful capabilities such as generating and modifying text, image, code, song, and video generation. However, many people are either unaware of these tools or find them challenging to use.</p>
+                        <p>With just a bit of guidance, learning to use AI becomes straightforward and enjoyable.</p>
+                        <p>Play and Learn AI is building a platform where even non-technical individuals, even 8th-grade students, can easily learn AI skills through simple and engaging tutorials.</p>
+                        <p>Making AI as easy as using MS Office. Join and Learn!</p>
+                    </div>
+                    <div className="cta" onClick={handleJoin}>
+                        Join our community and start learning AI today!
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
